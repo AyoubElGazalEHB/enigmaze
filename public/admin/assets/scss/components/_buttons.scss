@@ -2,11 +2,10 @@
 
 .btn {
   font-size: $btn-font-size;
-  line-height: $btn-line-height;
-  font-family: $type1;
-  font-weight: 500;
+  line-height: 1;
+  font-weight: normal;
   i {
-    font-size: 1rem;
+    margin-right: .3125rem;
   }
   &.btn-rounded {
     @include border-radius(50px);
@@ -16,8 +15,6 @@
   }
   &.btn-sm {
     font-size: $btn-font-size-sm;
-    padding: $btn-padding-y-sm $btn-padding-x-sm;
-    border-radius: 4px;
   }
   &.btn-lg {
     font-size: $btn-font-size-lg;
@@ -36,10 +33,6 @@
   &.btn-icon-text {
     .btn-icon-prepend {
       margin-right: .5rem;
-      .rtl & {
-        margin-right: 0;
-        margin-left: .5rem;
-      }
     }
     .btn-icon-append {
       margin-left: .5rem;
@@ -49,6 +42,16 @@
     width: 50px;
     height: 50px;
     padding: 0;
+  }
+  &.get-started-btn {
+    font-size: 0.75rem;
+    border: 1px solid rgba(#ffffff, 0.3);
+    font-weight: $font-weight-medium;
+    padding: 0.9375rem 1.0625rem;
+    @media (max-width: 576px) {
+      font-size: 0.6rem;
+      padding: 0.4375rem 0.6625rem;
+    }
   }
 }
 
@@ -63,7 +66,7 @@
 .btn-toolbar {
   .btn-group {
     +.btn-group {
-      @extend .ml-2;
+      @extend .ms-2;
     }
   }
 }
@@ -81,24 +84,19 @@
   .btn-inverse-#{$color} {
     @include button-inverse-variant($value);
   }
-  .btn-#{$color}:not(.btn-light) {
-    &:hover,
-    &:focus,
-    &:active {
+  .btn-#{$color} {
+    &:not(.btn-light):not(.btn-secondary) {
       color: $white;
-    }
-    &:focus,
-    &:active {
-      background: $value;
-      border-color: $value;
-    }
-  }
-  .btn-outline-#{$color} {
-    &:hover,
-    &:focus,
-    &:active {
-      background: theme-color($color);
-      color: $white;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $white;
+      }
+      &:focus,
+      &:active {
+        background: $value;
+        border-color: $value;
+      }
     }
   }
 }

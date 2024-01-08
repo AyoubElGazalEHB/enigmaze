@@ -9,7 +9,7 @@ body {
 .form-control,
 .form-control:focus {
     -webkit-box-shadow: none;
-    -moz-box-shadow: none
+    -moz-box-shadow: none;
 }
 
 .form-control {
@@ -18,7 +18,9 @@ body {
 
 .form-control:focus {
     outline: 0;
-    box-shadow: none
+    box-shadow: none;
+    background: #191c20;
+    border: none;
 }
 
 a,
@@ -30,7 +32,7 @@ h4,
 h5,
 p,
 span {
-    text-shadow: none
+    text-shadow: none;
 }
 
 [type=button]:focus,

@@ -2,9 +2,10 @@
 
 body {
   font-size: 1rem;
+  font-weight: normal;
+  font-weight: initial;
+  line-height: 1.5;
   font-family: $type1;
-  font-weight: 400;
-  line-height: normal;
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -19,8 +20,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: $type1;
-  font-weight: medium;
+  font-weight: $font-weight-medium;
 }
 p {
   font-size: $default-font-size;
@@ -31,7 +31,7 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 28px;
+  font-size: 1.875rem;
 }
 h3,
 .h3 {
@@ -39,7 +39,7 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 1.13rem;
+  font-size: 1.125rem;
 }
 h5,
 .h5 {
@@ -47,11 +47,10 @@ h5,
 }
 h6,
 .h6 {
-  font-size: 14px;
+  font-size: 0.9375rem;
 }
 p {
-  font-size: .9375rem;
-  line-height: 1.5;
+  font-size: 0.875rem;
 }
 .display-1 {
   font-size: 3.75rem;
@@ -109,7 +108,7 @@ address {
   }
 }
 .icon-lg {
-  font-size: 3.438rem;
+  font-size: 3.75rem;
 }
 .icon-md {
   font-size: 1.875rem;

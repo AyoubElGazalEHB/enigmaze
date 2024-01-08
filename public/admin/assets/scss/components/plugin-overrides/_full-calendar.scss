@@ -7,8 +7,7 @@
     height: auto;
     background-image: none;
     text-shadow: none;
-    font-family: $type1;
-    font-weight: 400;
+    font-weight: normal;
     background-color: $white;
     border-color: $border-color;
     text-transform: capitalize;
@@ -37,7 +36,7 @@
       background-color: $white;
       margin: 0;
       &.fc-state-active {
-        color: theme-color(danger);        
+        color: $danger;        
       }
     }
   }
@@ -82,14 +81,14 @@
     color: $white;
     padding: .5rem;
     &.fc-start {
-      background: theme-gradient-color(primary); 
+      background: $primary; 
       border-radius: 4px;
-      border-left: 4px solid theme-color(primary);        
+      border-left: 4px solid $primary;        
     }
     &.fc-not-start,
     &.fc-not-end {
-      background: theme-gradient-color(danger);
-      border-left: 4px solid theme-color(danger);
+      background: $danger;
+      border-left: 4px solid $danger;
       padding-left: .5rem;
     }
     &.fc-not-end {
@@ -105,26 +104,34 @@
 
 .fc-external-events {
   .fc-event {
-    background: $white;
-    color: $black;
+    background: $card-bg;
+    color: $body-color;
     border-width: 0 0 0 4px;
     padding: 16px;
     border-radius: 0;
     margin-bottom: 10px;
     &:nth-child(1) {
-      border-color: theme-color(primary);
+      border-color: $primary;
     }
     &:nth-child(2) {
-      border-color: theme-color(danger);
+      border-color: $danger;
     }
     &:nth-child(3) {
-      border-color: theme-color(success);
+      border-color: $success;
     }
     &:nth-child(4) {
-      border-color: theme-color(info);
+      border-color: $info;
     }
     &:nth-child(4) {
-      border-color: theme-color(warning);
+      border-color: $warning;
+    }
+  }
+}
+
+.fc-unthemed {
+  tbody {
+    td {
+      border-color: $border-color;
     }
   }
 }

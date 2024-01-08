@@ -65,6 +65,14 @@ $(function() {
       yAxes: [{
         ticks: {
           beginAtZero: true
+        },
+        gridLines: {
+          color: "rgba(204, 204, 204,0.1)"
+        }
+      }],
+      xAxes: [{
+        gridLines: {
+          color: "rgba(204, 204, 204,0.1)"
         }
       }]
     },
@@ -76,8 +84,9 @@ $(function() {
         radius: 0
       }
     }
-
   };
+
+  
   var doughnutPieData = {
     datasets: [{
       data: [30, 40, 30],
@@ -144,6 +153,18 @@ $(function() {
       filler: {
         propagate: true
       }
+    },
+    scales: {
+      yAxes: [{
+        gridLines: {
+          color: "rgba(204, 204, 204,0.1)"
+        }
+      }],
+      xAxes: [{
+        gridLines: {
+          color: "rgba(204, 204, 204,0.1)"
+        }
+      }]
     }
   }
 
@@ -263,7 +284,15 @@ $(function() {
     scales: {
       xAxes: [{
         type: 'linear',
-        position: 'bottom'
+        position: 'bottom',
+        gridLines: {
+          color: "rgba(204, 204, 204,0.1)"
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          color: "rgba(204, 204, 204,0.1)"
+        }
       }]
     }
   }

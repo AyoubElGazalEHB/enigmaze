@@ -1,6 +1,6 @@
 // Breadcrumb color variations
 @mixin breadcrumb-inverse-variant($color) {
-  background: lighten($color, 25%);
+  background: rgba($color, 0.25);
   border-color: $color;
 
   .breadcrumb-item {

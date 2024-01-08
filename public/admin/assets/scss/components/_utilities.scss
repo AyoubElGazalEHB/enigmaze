@@ -1,7 +1,7 @@
 /* Utilities */
 
 .grid-margin {
-  margin-bottom: $card-spacing-y;
+  margin-bottom: $grid-gutter-width;
 }
 .grid-margin-sm-0 {
   @media (min-width: 576px) {
@@ -32,8 +32,8 @@
   height: 43px;
 }
 .img-xs {
-  width: 37px;
-  height: 37px;
+  width: 35px;
+  height: 35px;
 }
 .img-ss {
   width: 26px;
@@ -98,11 +98,28 @@
 }
 
 .font-weight-light {
-  font-family: $type1;
-  font-weight: 300;
+  font-weight: $font-weight-light;
 }
 
 .font-weight-medium {
-  font-family: $type1;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
+}
+
+.font-weight-bold {
+  font-weight: $font-weight-bold;
+}
+
+.font-weight-normal {
+  font-weight: normal;
+}
+//
+.bg-gray-dark {
+  background: color(gray-dark);
+}
+
+@each $color,
+$value in $social-colors {
+  .text-#{$color} {
+    color: social-color($color);
+  }
 }

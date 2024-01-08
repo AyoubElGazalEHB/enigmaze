@@ -2,7 +2,7 @@
 
 @mixin tooltip-variant($color) {
 	.tooltip-inner {
-		background:  theme-gradient-color($color);
+		background:  theme-color($color);
 		color: $white;
 	}
 	&.bs-tooltip-top {

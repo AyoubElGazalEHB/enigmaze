@@ -12,7 +12,7 @@
 	left: 50%;
 	z-index: 1000;
 	font-size: $default-font-size;
-	font-family: $type1;
+	font-weight: normal;
 	font-weight: initial;
 	line-height: 1.85;
 	@include border-radius(10px);
@@ -24,7 +24,7 @@
 	transform: scale(0.8);
 	p{
 		font-size: $default-font-size;
-		font-family: $type1;
+		font-weight: normal;
 		font-weight: initial;
 	}
 }
@@ -96,6 +96,9 @@ body.avgrund-active {
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+.avgrund-active .avgrund-blur {
 }
 
 /* Optional close button styles */

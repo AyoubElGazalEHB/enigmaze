@@ -47,6 +47,13 @@ Route::get("/viewnarrators",[AdminControlLer::class, "viewnarrators"]);
 
 Route::post("/uploadnarrators",[AdminControlLer::class, "uploadnarrators"]);
 
+Route::get("/updatenarrators/{id}",[AdminControlLer::class, "updatenarrators"]);
+
+Route::post("/updatnarrators/{id}",[AdminControlLer::class, "updatnarrators"]);
+
+Route::get("/deletenarrators/{id}",[AdminControlLer::class, "deletenarrators"]);
+
+
 
 
 Route::middleware(['auth:sanctum', 'verified']) ->get('/dashboard', function()

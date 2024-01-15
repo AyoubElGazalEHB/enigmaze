@@ -144,7 +144,9 @@ public function viewreservation()
 public function viewnarrators()
 
 {
-  return view("admin.adminnarrators");
+
+  $data=narrators::all();
+  return view("admin.adminnarrators", compact ("data"));
 }
 
 public function uploadnarrators(Request $request)
@@ -165,6 +167,61 @@ $image=$request->image;
             $data->save();
 
             return redirect()->back();
+
+}
+
+public function updatenarrators($id)
+
+{
+ $data=narrators::find($id);
+return view("admin.updatenarrators", compact("data"));
+ 
+}
+
+
+public function updatnarrators(Request $request ,$id)
+
+{
+ $data=narrators::find($id);
+
+    $image=$request->image;
+
+if($image) 
+
+{
+
+$imagename =time().'.'.$image->getClientOriginalExtension();
+
+            $request->image->move('narratorsimage',$imagename);
+
+            $data->image=$imagename;
+  
+}
+
+    
+
+
+            $data->name=$request->name;
+
+            $data->save();
+
+            return redirect()->back();
+
+
+return view("admin.updatnarrators", compact("data"));
+ 
+
+}
+
+
+public function deletenarrators($id)
+
+{
+
+ $data=narrators::find($id);
+$data->delete();
+return redirect()->back();
+
 
 }
 

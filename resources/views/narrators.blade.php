@@ -10,7 +10,7 @@
                 </div>
             </div>
 
-            @foreach($data2 as $data2)
+            @foreach($data as $data)
             <div class="row">
                 <div class="col-lg-4">
                     <div class="chef-item">
@@ -21,10 +21,10 @@
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
-                            <img src="narratorsimage/{{$data2->image}}" alt="narrators #1">
+                            <img src="narratorsimage/{{$data->image}}" alt="narrators #1">
                         </div>
                         <div class="down-content">
-                            <h4>{{$data2->name}}</h4>
+                            <h4>{{$data->name}}</h4>
                         </div>
                     </div>
                 </div>

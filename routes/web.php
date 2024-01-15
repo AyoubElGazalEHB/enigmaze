@@ -36,9 +36,13 @@ Route::get("/updateview/{id}",[AdminControlLer::class, "updateview"]);
 
 Route::post("/update/{id}",[AdminControlLer::class, "update"]);
 
-
-
 Route::get ("/redirects", [HomeControlLer::class,"redirects"]);
+
+Route::post("/reservation",[AdminControlLer::class, "reservation"]);
+
+Route::get("/viewreservation",[AdminControlLer::class, "viewreservation"]);
+
+
 Route::middleware(['auth:sanctum', 'verified']) ->get('/dashboard', function()
 {
 return view( 'dashboard');

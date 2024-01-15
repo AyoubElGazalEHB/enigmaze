@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('participants')->nullable();
+            $table->string('date')->nullable();
             $table->string('time')->nullable();
             $table->string('message')->nullable();
             $table->timestamps();

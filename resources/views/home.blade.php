@@ -164,7 +164,27 @@ https://templatemo.com/tm-558-klassy-cafe
                             <h6>About Enigmaze</h6>
                             <h2>Embark on a Journey of Intriguing Adventures</h2>
                         </div>
-                        <p>Enigmaze is not just an escape game—it's an immersive experience that leaves you with unforgettable memories. Step into a world of mystery and challenge yourself to unravel puzzles, decode secrets, and escape the enigmatic realms we've crafted.</p>
+                        <p>
+
+<strong>About My Project</strong>
+
+    <br><br>
+
+    <strong>Overview:</strong> Welcome to my project! I've developed a dynamic web application with a sleek design and powerful features. The foundation is the "Klassy Cafe" template from <a href="https://templatemo.com/tm-558-klassy-cafe" style="color: #007BFF;">TemplateMo</a>, complemented by the <a href="https://github.com/BootstrapDash/corona-free-dark-bootstrap-admin-template" style="color: #007BFF;">Corona Free Dark Bootstrap Admin Template</a> for an enhanced UI.
+
+    <br><br>
+
+    <strong>Technologies Used:</strong>
+    <ul>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+        <li><strong>Graphics:</strong> <a href="https://www.freepik.com/" style="color: #007BFF;">Freepik</a></li>
+        <li><strong>Email Testing:</strong> <a href="https://mailtrap.io/home" style="color: #007BFF;">Mailtrap</a></li>
+        <li><strong>Backend Framework:</strong> <a href="https://laravel.com/docs/10.x/installation" style="color: #007BFF;">Laravel</a></li>
+        <li><strong>Database Management:</strong> <a href="https://www.phpmyadmin.net" style="color: #007BFF;">phpMyAdmin</a></li>
+    </ul>
+
+    <br><br>
+</p>
                         <div class="row">
                             <div class="col-4">
                                 <img src="assets/images/about-thum1.avif" alt="">

@@ -10,6 +10,9 @@ use App\Models\User;
 
 use App\Models\Gamemode;
 
+use App\Models\Narrators;
+
+
 
 
 
@@ -21,7 +24,9 @@ class HomeController extends Controller
 {
 
     $data=gamemode::all();
-    return view("home", compact("data"));
+
+    $data2=narrators::all();
+    return view("home", compact("data","data2"));
 
 }
 

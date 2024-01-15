@@ -10,6 +10,8 @@ use App\Models\Gamemode;
 
 use App\Models\Reservation;
 
+use App\Models\Narrators;
+
 
 
 
@@ -137,6 +139,33 @@ public function viewreservation()
 {
   $data=reservation::all();
   return view("admin.adminreservation", compact("data"));
+}
+
+public function viewnarrators()
+
+{
+  return view("admin.adminnarrators");
+}
+
+public function uploadnarrators(Request $request)
+
+{
+  $data=new narrators;
+
+$image=$request->image;
+
+    $imagename =time().'.'.$image->getClientOriginalExtension();
+
+            $request->image->move('narratorsimage',$imagename);
+
+            $data->image=$imagename;
+
+            $data->name=$request->name;
+
+            $data->save();
+
+            return redirect()->back();
+
 }
 
 }

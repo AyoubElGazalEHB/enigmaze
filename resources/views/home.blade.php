@@ -201,7 +201,7 @@ https://templatemo.com/tm-558-klassy-cafe
 
    @include("gamemode")
 
-    
+    @include("narrators")
 
     @include("reservation")
 

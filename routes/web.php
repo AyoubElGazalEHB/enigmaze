@@ -42,6 +42,12 @@ Route::post("/reservation",[AdminControlLer::class, "reservation"]);
 
 Route::get("/viewreservation",[AdminControlLer::class, "viewreservation"]);
 
+Route::get("/viewnarrators",[AdminControlLer::class, "viewnarrators"]);
+
+
+Route::post("/uploadnarrators",[AdminControlLer::class, "uploadnarrators"]);
+
+
 
 Route::middleware(['auth:sanctum', 'verified']) ->get('/dashboard', function()
 {

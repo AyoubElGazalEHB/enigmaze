@@ -166,11 +166,11 @@ https://templatemo.com/tm-558-klassy-cafe
                         </div>
                         <p>
 
-<strong>About My Project</strong>
+    <strong>About My Project</strong>
 
     <br><br>
 
-    <strong>Overview:</strong> Welcome to my project! I've developed a dynamic web application with a sleek design and powerful features. The foundation is the "Klassy Cafe" template from <a href="https://templatemo.com/tm-558-klassy-cafe" style="color: #007BFF;">TemplateMo</a>, complemented by the <a href="https://github.com/BootstrapDash/corona-free-dark-bootstrap-admin-template" style="color: #007BFF;">Corona Free Dark Bootstrap Admin Template</a> for an enhanced UI.
+    <strong>Overview:</strong> Welcome to my project! I've developed a dynamic web application with a sleek design and powerful features, aiming to [briefly describe the project's purpose]. The foundation is the "Klassy Cafe" template from <a href="https://templatemo.com/tm-558-klassy-cafe" style="color: #007BFF;">TemplateMo</a>, complemented by the <a href="https://github.com/BootstrapDash/corona-free-dark-bootstrap-admin-template" style="color: #007BFF;">Corona Free Dark Bootstrap Admin Template</a> for an enhanced UI.
 
     <br><br>
 
@@ -184,6 +184,15 @@ https://templatemo.com/tm-558-klassy-cafe
     </ul>
 
     <br><br>
+
+    <strong>Contributor:</strong> Developed by Ayoub El Gazal.
+
+    <br><br>
+
+    <strong>GitHub Repository:</strong> Check out the code on <a href="https://github.com/AyoubElGazalEHB/enigmaze.git" style="color: #007BFF;">GitHub</a>.
+
+    <br><br>
+
 </p>
                         <div class="row">
                             <div class="col-4">

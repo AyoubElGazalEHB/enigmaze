@@ -33,6 +33,7 @@ class HomeController extends Controller
 public function redirects()
 {
     $data=gamemode::all();
+    $data2=narrators::all();
     
     $usertype= Auth::user()->usertype;
     
@@ -43,7 +44,7 @@ public function redirects()
     }
 
     else{
-            return view('home', compact('data'));
+            return view('home', compact('data','data2'));
         }
 }
 

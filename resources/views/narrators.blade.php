@@ -4,13 +4,13 @@
             <div class="row">
                 <div class="col-lg-4 offset-lg-4 text-center">
                     <div class="section-heading">
-                        <h6>Our Chefs</h6>
-                        <h2>We offer the best ingredients for you</h2>
+                        <h6>Our Narrators</h6>
+                        <h2>Crafting Immersive Stories Just for You</h2>
                     </div>
                 </div>
             </div>
 
-            @foreach($data as $data)
+            @foreach($data2 as $data2)
             <div class="row">
                 <div class="col-lg-4">
                     <div class="chef-item">
@@ -21,10 +21,10 @@
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
-                            <img src="narratorsimage/{{$data->image}}" alt="narrators #1">
+                            <img src="narratorsimage/{{$data2->image}}" alt="narrators #1">
                         </div>
                         <div class="down-content">
-                            <h4>{{$data->name}}</h4>
+                            <h4>{{$data2->name}}</h4>
                         </div>
                     </div>
                 </div>

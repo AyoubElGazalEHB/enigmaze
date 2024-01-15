@@ -5,7 +5,7 @@
                 <div class="col-lg-4">
                     <div class="section-heading">
                         <h6>Game Modes</h6>
-                        <h2>Our selection of cakes with quality taste</h2>
+                        <h2>Dive into a Menu of Enthralling Challenges</h2>
                     </div>
                 </div>
             </div>

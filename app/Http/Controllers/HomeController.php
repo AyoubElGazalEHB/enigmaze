@@ -6,15 +6,29 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
 
+use App\Models\User;
+
+use App\Models\Gamemode;
+
+
+
+
 
 class HomeController extends Controller
 {
-    public function index(){
-    return view("home");
+    public function index()
+
+{
+
+    $data=gamemode::all();
+    return view("home", compact("data"));
 
 }
 
-public function redirects(){
+public function redirects()
+{
+    $data=gamemode::all();
+    
     $usertype= Auth::user()->usertype;
     
 
@@ -24,7 +38,7 @@ public function redirects(){
     }
 
     else{
-            return view('home');
+            return view('home', compact('data'));
         }
 }
 

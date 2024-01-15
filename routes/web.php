@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Homecontroller;
+
+use App\Http\Controllers\Admincontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,14 +20,18 @@ use App\Http\Controllers\Homecontroller;
 
 Route::get("/",[HomeController::class,"index"]);
 
-Route::get("/redirects",[HomeController::class,"redirects"]);
+Route::get("/users",[AdminControlLer:: class,"user"]);
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+Route::get("/gamemode",[AdminControlLer:: class,"gamemode"]);
+
+Route::post("/uploadgamemode",[AdminControlLer:: class,"upload"]);
+
+
+
+Route::get("/deleteuser/{id}",[AdminControlLer::class, "deleteuser"]);
+
+Route::get ("/redirects", [HomeControlLer::class,"redirects"]);
+Route::middleware(['auth:sanctum', 'verified']) ->get('/dashboard', function()
+{
+return view( 'dashboard');
+})->name('dashboard');

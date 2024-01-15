@@ -22,6 +22,8 @@ Route::get("/",[HomeController::class,"index"]);
 
 Route::get("/users",[AdminControlLer:: class,"user"]);
 
+Route::get("/deletegame/{id}",[AdminControlLer:: class,"deletegame"]);
+
 Route::get("/gamemode",[AdminControlLer:: class,"gamemode"]);
 
 Route::post("/uploadgamemode",[AdminControlLer:: class,"upload"]);
@@ -29,6 +31,12 @@ Route::post("/uploadgamemode",[AdminControlLer:: class,"upload"]);
 
 
 Route::get("/deleteuser/{id}",[AdminControlLer::class, "deleteuser"]);
+
+Route::get("/updateview/{id}",[AdminControlLer::class, "updateview"]);
+
+Route::post("/update/{id}",[AdminControlLer::class, "update"]);
+
+
 
 Route::get ("/redirects", [HomeControlLer::class,"redirects"]);
 Route::middleware(['auth:sanctum', 'verified']) ->get('/dashboard', function()
